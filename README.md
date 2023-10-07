@@ -1,2 +1,0 @@
-# TradeCode
-TradeCode
