@@ -1,0 +1,64 @@
+/* styles.css */
+
+/* Container styling */
+.Home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Title styling */
+  .Component__title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333; /* Change the color to your preference */
+  }
+  
+  /* Description styling */
+  .Home__description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #666; /* Change the color to your preference */
+  }
+  
+  /* Warning message styling */
+  .Home__warning {
+    font-weight: bold;
+    color: #f00; /* Change the color to indicate a warning */
+  }
+  
+  /* Instructions list styling */
+  .Home__instructions ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Instruction item styling */
+  .Home__instructions li {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  /* Link styling */
+  .Home__link {
+    text-decoration: none;
+    color: #007bff; /* Change the color to your preference */
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  /* Hover effect for links */
+  .Home__link:hover {
+    color: #0056b3; /* Change the hover color to your preference */
+  }
+  
+  .Home__footer {
+    background-color: #333; /* Change the background color to your preference */
+    color: #fff; /* Change the text color to your preference */
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+  }

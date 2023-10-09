@@ -1,28 +1,58 @@
 import { Link } from 'react-router-dom';
+import './Home.css'; 
+
 
 function Home() {
-    return (
-      <div className = 'Home'>
-        <h3 className='Component__title'>Welcome, </h3>
-        <div className='Home__description'>
-          <p>
-            Companies may register to receive a customized smart contract, which will serve
-            as a registry of all products produced by the company. This smart contract will
-            be made publicly accessible, allowing any individual to verify the authenticity
-            of a product by checking its presence on the corresponding smart contract.<br/>
-            <span className="Home__warning">Note: Only contract owners can add products to their contract</span>
-          </p>
-        </div>
-          <div className='Home__instructions'>
-            <ul>
-              <li>To create a smart contract for your organization visit:  <Link className='Home__link' to="createcontract">Create Contract page</Link></li>
-              <li>To fetch smart contract address linked to a wallet address visit: <Link className='Home__link' to="getcontract">Fetch Address page</Link></li>
-              <li>To add products to your smart contract visit:  <Link className='Home__link' to="addproduct">Add Products page</Link></li>
-              <li>To verify the authenticity of a product visit: <Link className='Home__link' to="verify">Verify Product page</Link></li>
-            </ul>
-          </div>
+  return (
+    <div className="Home">
+      <div className="Home__header">
+        <h1 className="Home__title" >Welcome to TradeCode</h1>
+        <p className="Home__subtitle">
+          Your Trusted Solution for Product Authentication
+        </p>
       </div>
-    );
-  }
-  
+      <div className="Home__description">
+        <p>
+          Companies can now easily register and obtain a customized smart
+          contract, which acts as a secure registry for all of your products.
+          Our blockchain-based technology ensures the authenticity of your
+          products, providing peace of mind to both you and your customers.
+        </p>
+        <p className="Home__warning">
+          <strong>Note:</strong> Only contract owners can add products to their
+          contract.
+        </p>
+      </div>
+      <div className="Home__instructions">
+        <h2>Get Started</h2>
+        <ul>
+          <li>
+            <Link className="Home__link" to="createcontract">
+              Create Your Contract
+            </Link>
+          </li>
+          <li>
+            <Link className="Home__link" to="getcontract">
+              Find Your Contract
+            </Link>
+          </li>
+          <li>
+            <Link className="Home__link" to="addproduct">
+              Add Products
+            </Link>
+          </li>
+          <li>
+            <Link className="Home__link" to="verify">
+              Verify Product Authenticity
+            </Link>
+          </li>
+        </ul>
+      </div>
+      <footer className="Home__footer">
+        <p>&copy; 2023 TradeCode. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+}
+
 export default Home;
