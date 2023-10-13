@@ -7,14 +7,13 @@ import Navigation from "./components/Navigation";
 import Home from "./components/Home";
 import VerifyProduct from "./components/VerifyProduct";
 import AddProduct from "./components/AddProduct";
-import GetContract from "./components/GetContract";
+import Register from "./components/Register";
 
 // ABIs
 import CentralABI from "./abis/Cental_ABI.json";
 
 // Config
 import config from "./config.json";
-import DeployContract from "./components/DeployContract";
 
 // const Home = () => <div>Home Page</div>;
 // const About = () => <div>About Page</div>;
@@ -66,7 +65,7 @@ function App() {
         <Route
           path="/createcontract"
           element={
-            <DeployContract
+            <Register
               account={account}
               provider={provider}
               central={central}
@@ -74,9 +73,9 @@ function App() {
           }
         />
         <Route
-          path="/getcontract"
+          path="/Register"
           element={
-            <GetContract
+            <Register
               account={account}
               provider={provider}
               central={central}
