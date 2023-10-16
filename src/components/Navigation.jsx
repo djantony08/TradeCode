@@ -31,34 +31,34 @@ function Navigation() {
   }, []);
 
   return (
-    <nav className="nav container">
+    <nav className="bg-gray-800 px-4 py-4">
       <a href="/" className="nav__logo">
         TradeCode
       </a>
       <div className="nav__menu">
         <ul className="nav__list grid">
           <li className="nav__item">
-            <Link className="nav__link" to="/">
+            <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium" to="/">
               Home
             </Link>
           </li>
           <li className="nav__item">
-            <Link className="nav__link" to="createcontract">
+            <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium" to="createcontract">
               Register Organization
             </Link>
           </li>
           <li className="nav__item">
-            <Link className="nav__link" to="getcontract">
-              Fetch Address
+            <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium" to="mint">
+              Mint Tokens
             </Link>
           </li>
           <li className="nav__item">
-            <Link className="nav__link" to="addproduct">
+            <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium" to="addproduct">
               Add Products
             </Link>
           </li>
           <li className="nav__item">
-            <Link className="nav__link" to="verify">
+            <Link className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium" to="verify">
               Verify Products
             </Link>
           </li>

@@ -28,12 +28,12 @@ function Home() {
         <ul>
           <li>
             <Link className="Home__link" to="createcontract">
-              Create Your Contract
+              Register Organization
             </Link>
           </li>
           <li>
             <Link className="Home__link" to="getcontract">
-              Find Your Contract
+              Mint Tokens
             </Link>
           </li>
           <li>

@@ -14,6 +14,7 @@ import CentralABI from "./abis/Cental_ABI.json";
 
 // Config
 import config from "./config.json";
+import MintAccount from "./components/MintAccount";
 
 // const Home = () => <div>Home Page</div>;
 // const About = () => <div>About Page</div>;
@@ -86,6 +87,16 @@ function App() {
           path="/addproduct"
           element={
             <AddProduct
+              account={account}
+              provider={provider}
+              central={central}
+            />
+          }
+        />
+        <Route
+          path="/mint"
+          element={
+            <MintAccount
               account={account}
               provider={provider}
               central={central}
